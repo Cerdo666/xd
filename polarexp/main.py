@@ -2,8 +2,8 @@ import polars as pl
 import altair as alt
 import streamlit as st
 
-# Read CSV (está en el mismo directorio)
-df = pl.read_csv("nombres_fechas.csv")
+url = "https://raw.githubusercontent.com/Cerdo666/xd/main/polarexp/nombres_fechas.csv"
+df = pl.read_csv(url)
 
 # Calculate age and count
 df_count = (
